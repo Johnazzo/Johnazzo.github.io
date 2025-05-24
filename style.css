@@ -61,8 +61,8 @@ body {
 
 .image-grid {
   display: flex;
+  flex-direction: row;
   gap: 20px;
-  margin-top: 40px;
 }
 
 .column {

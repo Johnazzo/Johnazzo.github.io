@@ -1,80 +1,67 @@
-body {
+/* Reset default browser styles */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  overflow: hidden; /* prevent overall scroll */
-}
-
-.main-layout {
-  display: flex;
-  height: 100vh;
-  padding: 40px;
+  padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Container holding both columns */
+.container {
+  display: flex;
+  width: 1400px; /* Adjust based on your PNG width */
+  margin: 0 auto;
+  padding: 40px; /* Adjust based on your PNG padding */
+}
+
+/* Text column styling */
 .text-column {
-  width: 40%;
-  position: fixed;
-  left: 40px;
-  top: 100px; /* lowers the text to match PNG position */
-  bottom: 40px;
-  overflow: hidden;
+  width: 300px; /* Adjust based on your PNG */
+  padding-right: 40px; /* Space between text and images */
 }
 
-.text-wrapper {
-  position: relative;
-  height: 100%;
+/* Image collage styling */
+.image-collage {
+  display: flex;
+  gap: 20px; /* Space between left and right image columns */
+}
+
+/* Individual image columns */
+.column {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  gap: 20px; /* Space between images vertically */
 }
 
-.text-column h1 {
-  font-size: 2.8rem;
-  font-weight: 900;
-  margin-bottom: 1rem;
+/* Specific image sizes based on PNG measurements */
+.column.left img:first-child {
+  width: 420px;
+  height: 540px;
 }
 
-.text-column h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
+.column.left img:last-child {
+  width: 420px;
+  height: 260px;
 }
 
-.text-column p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.2rem;
+.column.right img:first-child {
+  width: 280px;
+  height: 200px;
 }
 
-.text-column .footer {
-  font-size: 0.95rem;
-  margin-top: 2rem;
+.column.right img:last-child {
+  width: 280px;
+  height: 600px;
 }
 
-.image-column {
-  margin-left: 45%;
-  width: 55%;
-  overflow-y: scroll;
-  padding-right: 40px;
-  box-sizing: border-box;
-}
-
-.image-scroller {
-  display: flex;
-  gap: 1.5rem;
-  padding-top: 40px;
-  padding-bottom: 80px;
-}
-
-.left-stack,
-.right-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
+/* Ensure images cover their containers without distortion */
 img {
   object-fit: cover;
   display: block;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
+

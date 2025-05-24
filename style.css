@@ -2,10 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-  font-family: "BebasNeue-Regular.otf", sans-serif;
-  src: url("BebasNeue-Regular.otf") format('opentype');
-  font-family: "Supreme-Medium.otf", sans-serif;
-  src: url("Supreme-Medium.otf") format('opentype');
+  font-family: 'Helvetica Neue', sans-serif;
   overflow: hidden;
 }
 

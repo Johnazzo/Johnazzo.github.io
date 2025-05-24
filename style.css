@@ -15,6 +15,7 @@ body {
   height: 100%;
   padding: 40px 60px;
   box-sizing: border-box;
+  gap: 200px
 }
 
 /* Left: Text Column */

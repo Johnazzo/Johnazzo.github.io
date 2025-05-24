@@ -1,67 +1,81 @@
-/* Reset default browser styles */
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #ffffff;
-  color: #000000;
-}
-
-/* Container holding both columns */
 .container {
   display: flex;
-  width: 1400px; /* Adjust based on your PNG width */
-  margin: 0 auto;
-  padding: 40px; /* Adjust based on your PNG padding */
+  padding: 40px;
+  max-width: 1400px;
+  margin: auto;
+  gap: 60px; /* Space between text and image collage */
 }
 
-/* Text column styling */
 .text-column {
-  width: 300px; /* Adjust based on your PNG */
-  padding-right: 40px; /* Space between text and images */
+  width: 320px;
 }
 
-/* Image collage styling */
+.text-column h1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.text-column h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.text-column p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer {
+  font-size: 13px;
+  margin-top: 40px;
+}
+
 .image-collage {
   display: flex;
-  gap: 20px; /* Space between left and right image columns */
+  gap: 20px;
 }
 
-/* Individual image columns */
 .column {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Space between images vertically */
+  gap: 20px;
 }
 
-/* Specific image sizes based on PNG measurements */
-.column.left img:first-child {
+/* Image dimensions as closely matched from the PNG */
+.img-vector {
   width: 420px;
   height: 540px;
+  object-fit: cover;
 }
 
-.column.left img:last-child {
+.img-arched {
   width: 420px;
   height: 260px;
+  object-fit: cover;
 }
 
-.column.right img:first-child {
+.img-bw {
   width: 280px;
   height: 200px;
+  object-fit: cover;
 }
 
-.column.right img:last-child {
+.img-green {
   width: 280px;
   height: 600px;
-}
-
-/* Ensure images cover their containers without distortion */
-img {
   object-fit: cover;
-  display: block;
 }
 

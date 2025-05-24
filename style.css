@@ -81,8 +81,8 @@ body {
 /* Assign each image to its position */
 .image-grid img:nth-child(1) {
   grid-area: main;
-  height: 400px;
-  width: 320px;
+  height: 500px;
+  width: 400px;
 }
 
 .image-grid img:nth-child(2) {
@@ -93,8 +93,8 @@ body {
 
 .image-grid img:nth-child(3) {
   grid-area: bottom;
-  height: 160px;
-  width: 320px;
+  height: 305px;
+  width: 400px;
 }
 
 .image-grid img:nth-child(4) {

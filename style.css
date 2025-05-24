@@ -60,45 +60,37 @@ body {
 }
 
 .image-grid {
-  display: grid;
-  grid-template-areas:
-    "main img1"
-    "bottom img2";
-  grid-template-columns: 320px 240px;
-  grid-template-rows: 400px 160px;
-  column-gap: 24px;
-  row-gap: 24px;
-  width: 584px; /* 320 + 24 + 240 */
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
 }
 
-.image-grid img {
-  width: 100%;
-  height: 100%;
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.img-vector {
+  width: 420px;
+  height: 540px;
   object-fit: cover;
-  display: block;
 }
 
-/* Assign each image to its position */
-.image-grid img:nth-child(1) {
-  grid-area: main;
-  height: 400px;
-  width: 320px;
+.img-arched {
+  width: 420px;
+  height: 260px;
+  object-fit: cover;
 }
 
-.image-grid img:nth-child(2) {
-  grid-area: img1;
-  height: 190px;
-  width: 240px;
+.img-bw {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
 }
 
-.image-grid img:nth-child(3) {
-  grid-area: bottom;
-  height: 160px;
-  width: 320px;
-}
-
-.image-grid img:nth-child(4) {
-  grid-area: img2;
-  height: 230px;
-  width: 240px;
+.img-green {
+  width: 280px;
+  height: 600px;
+  object-fit: cover;
 }

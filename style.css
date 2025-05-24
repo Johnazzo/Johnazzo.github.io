@@ -19,7 +19,7 @@ body {
 
 .text-column {
   width: 370px;
-  margin-right: 60px;
+  margin-right: 120px;
 }
 
 .text-column h1 {
@@ -61,7 +61,6 @@ body {
 .image-grid {
   display: flex;
   gap: 20px;
-  margin-left: 200px;
 }
 
 .column {

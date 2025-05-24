@@ -1,19 +1,27 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background: white;
-  color: black;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Container holding both text and images */
 .container {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   padding: 40px;
   max-width: 1400px;
-  margin: auto;
-  gap: 60px; /* Space between text and image collage */
+  margin: 0 auto;
+  gap: 60px;
 }
 
+/* Text block on the LEFT */
 .text-column {
   width: 320px;
 }
@@ -43,18 +51,20 @@ body {
   margin-top: 40px;
 }
 
+/* Image grid on the RIGHT */
 .image-collage {
   display: flex;
   gap: 20px;
 }
 
+/* Each column of images */
 .column {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Image dimensions as closely matched from the PNG */
+/* Pixel-specific sizes from the PNG */
 .img-vector {
   width: 420px;
   height: 540px;
@@ -78,4 +88,3 @@ body {
   height: 600px;
   object-fit: cover;
 }
-

@@ -10,7 +10,6 @@ body {
   color: #000;
 }
 
-/* Container holding both text and images */
 .container {
   display: flex;
   flex-direction: row;
@@ -21,7 +20,6 @@ body {
   gap: 60px;
 }
 
-/* Text block on the LEFT */
 .text-column {
   width: 320px;
 }
@@ -51,20 +49,17 @@ body {
   margin-top: 40px;
 }
 
-/* Image grid on the RIGHT */
 .image-collage {
   display: flex;
   gap: 20px;
 }
 
-/* Each column of images */
 .column {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Pixel-specific sizes from the PNG */
 .img-vector {
   width: 420px;
   height: 540px;
